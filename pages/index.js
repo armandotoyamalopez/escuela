@@ -1,6 +1,6 @@
-import Head from 'next/head';
+import Head from "next/head";
 import Feed from "../components/Feed";
-import Sidebar from '../components/Sidebar';
+import Sidebar from "../components/Sidebar";
 import Widgets from "../components/Widgets";
 
 
