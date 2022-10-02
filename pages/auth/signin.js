@@ -8,7 +8,7 @@ export default function signin({ providers }) {
         alt="twitter image inside a phone"
         className="hidden object-cover md:w-44 md:h-80 rotate-6  md:inline-flex"
       />
-      <div className="">
+      <div className="flex justify-center">
         {Object.values(providers).map((provider) => (
           <div className="flex flex-col items-center">
             <img
