@@ -1,5 +1,7 @@
 import NextAuth from "next-auth"
-import GithubProvider from "next-auth/providers/github"
+import GithubProvider from "next-auth/providers/github";
+import GoogleProvider from "next-auth/providers/google";
+import FacebookProvider from "next-auth/providers/facebook";
 
 export const authOptions = {
   // Configure one or more authentication providers
@@ -9,11 +11,11 @@ export const authOptions = {
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
     }),
     // ...add more providers here
+    
+
   ],
-  secret: process.env.AUTH_SECRET,
-  jwt: {
-    secret: process.env.JWT_SECRET,
-  },
+  
+  
 
   pages: {
     signIn: "/auth/signin",
