@@ -1,5 +1,5 @@
-import { EmojiHappyIcon, PhotographIcon, XIcon,} from "@heroicons/react/outline";
-import { addDoc, collection, doc, serverTimestamp, updateDoc,} from "firebase/firestore";
+import { EmojiHappyIcon, PhotographIcon, XIcon, } from "@heroicons/react/outline";
+import { addDoc, collection, doc, serverTimestamp, updateDoc, } from "firebase/firestore";
 import { getDownloadURL, ref, uploadString } from "firebase/storage";
 import { useSession, signOut } from "next-auth/react";
 import { useState, useRef } from "react";
@@ -77,7 +77,7 @@ export default function Input() {
               <div className="relative">
                 <XIcon
                   onClick={() => setSelectedFile(null)}
-                  className="h-7 text-black absolute cursor-pointer shadow-md shadow-white rounded-full"
+                  className="border h-7 text-red absolute cursor-pointer shadow-md shadow-white m-1 rounded-full"
                 />
                 <img
                   src={selectedFile}
